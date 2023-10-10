@@ -1,0 +1,12 @@
+header {
+    background-color: darkgrey;
+    height: 10vh;
+}
+main {
+    background-color: grey;
+    height: 80vh;
+}
+footer {
+    background-color: darkgrey;
+    height: 10vh;
+}

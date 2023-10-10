@@ -5,21 +5,21 @@ class Libro {
         this.genero = genero;
         this.leido = leido;
     }
-    Marcarcomoleido () {
+    Marcarcomoleido() {
         this.leido = true
         console.log(`Este libro ha sido leido`)
     }
-    Marcarcomonoleido () {
+    Marcarcomonoleido() {
         this.leido = false
         console.log(`Este libro no ha sido leido`)
     }
-    Informacion () {
+    Informacion() {
         console.log(`titulo: ${this.titulo}, autor: ${this.autor}, genero: ${this.titulo} leido : ${this.leido}, leido ${this.leido ? "si" : "no"}`)
     }
 }
 
-const libro1 = new Libro("Rayuela","Julio","Novela")
-const libro2 = new Libro("Sabores","Segnit","Enciclopedia")
+const libro1 = new Libro("Rayuela", "Julio", "Novela")
+const libro2 = new Libro("Sabores", "Segnit", "Enciclopedia")
 libro1.Marcarcomoleido()
 libro2.Marcarcomonoleido()
 libro1.Informacion()
@@ -34,7 +34,7 @@ class Vehiculo {
     }
 }
 
-class Carro extends Vehiculo{
+class Carro extends Vehiculo {
     acelerar() {
         console.log("Acelerando un carro de la marca " + this.marca)
     }
@@ -52,12 +52,12 @@ class Animal {
     }
 }
 
-class Perro extends Animal{
+class Perro extends Animal {
     sonido() {
         console.log("Guau")
     }
 }
-class Gato extends Animal{
+class Gato extends Animal {
     sonido() {
         console.log("Miau")
     }
@@ -65,8 +65,6 @@ class Gato extends Animal{
 
 const perro = new Perro("Zeus")
 const gato = new Gato("Waffle")
-
-
 
 perro.sonido()
 gato.sonido()
