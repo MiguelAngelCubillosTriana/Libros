@@ -68,3 +68,41 @@ const gato = new Gato("Waffle")
 
 perro.sonido()
 gato.sonido()
+
+class FiguraGeometrica {
+    constructor(lenght) {
+        this.lenght = lenght;
+    }
+    area() {
+        return 0
+    }
+    perimeter() {
+        return 0
+    }
+}
+
+class Circulo extends FiguraGeometrica {
+    constructor(lenght, radio) {
+        super(lenght);
+        this.radio = radio;
+    }
+    area() {
+        return 3.1416 * this.radio * this.radio;
+    }
+}
+
+class Cuadrado extends FiguraGeometrica {
+    constructor(lenght) {
+        super(lenght);
+    }
+    area() {
+        return this.lenght * this.lenght
+    }
+}
+class Rectangulo extends FiguraGeometrica {
+}
+
+const circulo = new Circulo("circulo", 6);
+const cuadrado = new Cuadrado("cuadrado", 2);
+console.log(circulo.area())
+console.log(cuadrado.area())
